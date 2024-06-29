@@ -1,18 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("h1").click(function(){
+    $("h1").text("Hello world!");
+  });
+  $("p").click(function(){
+    $("p").html("<h1>Hello world!</h1>");
+  });
+  $("h3").click(function(){
+    $("h3").fadeOut(2235);
+  });
+});
+</script>
     <title>Page Title</title>
     <link rel="stylesheet" href="src/style.css">
 </head>
 <body>
 
 <h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+<p>點擊h1</p>
 
-<h2>This is a smaller Heading</h2>
+<h2>點擊p</h2>
 <p>This is a paragraph...<br>with break<br>lines</p>
 
-<h3> item list </h3>
+<h3> 點我 </h3>
 <ul>
     <li>item 1</li>
     <li style="color: blue">item 2 and style</li>
